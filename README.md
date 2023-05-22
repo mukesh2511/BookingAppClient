@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# myBooking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the client side of myBooking app which is similar to goibibo and is purely created using react. The styling is done with Tailwind css
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+The major features of this app is if you are logged in you can search for hotels and you can select all the necessary information the no of people the no of rooms and the room as well which you have to book. You can get the final price of the room on the end page after you have selected all the details.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Book the room search login and logout
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Connection of Frontend and Backend
+- cors
+## Screenshots
 
-### `npm test`
+- Home page
+![Screenshot 1](https://github.com/mukesh2511/BookingAppClient/blob/master/screenshots/home.png?raw=true)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot 2](https://github.com/mukesh2511/BookingAppClient/blob/master/screenshots/home2.png?raw=true)
 
-### `npm run build`
+- Search
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot 3](https://github.com/mukesh2511/BookingAppClient/blob/master/screenshots/search.png?raw=true)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Screenshot 4](https://github.com/mukesh2511/BookingAppClient/blob/master/screenshots/search2.png?raw=true)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- After Search
 
-### `npm run eject`
+![Screenshot 5](https://github.com/mukesh2511/BookingAppClient/blob/master/screenshots/search.png?raw=true)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-Particular hotel page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Screenshot 6](https://github.com/mukesh2511/BookingAppClient/blob/master/screenshots/hotel.png?raw=true)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Slider
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Screenshot 7](https://github.com/mukesh2511/BookingAppClient/blob/master/screenshots/slider.png?raw=true)
 
-## Learn More
+- Hotel Room
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Screenshot 8](https://github.com/mukesh2511/BookingAppClient/blob/master/screenshots/rooms.png?raw=true)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Total Price
 
-### Code Splitting
+![Screenshot 9](https://github.com/mukesh2511/BookingAppClient/blob/master/screenshots/total%20price.png?raw=true)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Login Page
 
-### Analyzing the Bundle Size
+![Screenshot 10](https://github.com/mukesh2511/BookingAppClient/blob/master/screenshots/login.png?raw=true)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Register Page
 
-### Making a Progressive Web App
+![Screenshot 10](https://github.com/mukesh2511/BookingAppClient/blob/master/screenshots/register.png?raw=true)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
