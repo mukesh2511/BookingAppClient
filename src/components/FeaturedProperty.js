@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch";
 
 const FeaturedProperty = () => {
   const { data, loading, error } = useFetch(
-    "http://localhost:8000/api/hotels?featured=true"
+    "https://mybooking-i6bm.onrender.com/api/hotels?featured=true"
   );
   return (
     <>

@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch.js";
 
 const PropertyList = () => {
   const { data, loading, error } = useFetch(
-    "http://localhost:8000/api/hotels/countByType"
+    "https://mybooking-i6bm.onrender.com/api/hotels/countByType"
   );
 
   const images = [

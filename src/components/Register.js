@@ -15,7 +15,10 @@ const Register = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/api/auth/register", userInfo);
+      await axios.post(
+        "https://mybooking-i6bm.onrender.com/api/auth/register",
+        userInfo
+      );
 
       navigate("/login");
     } catch (error) {
