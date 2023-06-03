@@ -3,13 +3,10 @@ import Navbar from "./Navbar";
 import Header from "./Header";
 import MailList from "./MailList";
 import Footer from "./Footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleArrowLeft,
-  faCircleArrowRight,
-  faCircleXmark,
-  faLocationDot,
-} from "@fortawesome/free-solid-svg-icons";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import CloseIcon from "@mui/icons-material/Close";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import useFetch from "../hooks/useFetch";
 import { useLocation, useNavigate } from "react-router-dom";
 import { SearchContext } from "../context/SearchContext.js";
@@ -108,14 +105,12 @@ const Hotel = () => {
           <div className="hotelContainer flex flex-col items-center mt-5 relative z-0 ">
             {open && (
               <div className="slider  z-[999] sticky top-0 left-0 w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.426)] flex items-center">
-                <FontAwesomeIcon
-                  icon={faCircleXmark}
+                <CloseIcon
                   className="cursor-pointer absolute top-8 right-8 text-3xl text-gray-300"
                   onClick={() => setOpen(false)}
                 />
-                <FontAwesomeIcon
+                <ArrowBackIosIcon
                   className="cursor-pointer  text-5xl text-gray-300 ml-10"
-                  icon={faCircleArrowLeft}
                   onClick={() => handleMove("desc")}
                 />
                 <div className="sliderWrapper w-full h-full flex justify-center items-center">
@@ -125,9 +120,8 @@ const Hotel = () => {
                     className="sliderimg w-[80%] h-[80vh] "
                   />
                 </div>
-                <FontAwesomeIcon
+                <ArrowForwardIosIcon
                   className="cursor-pointer mr-10 text-5xl text-gray-300"
-                  icon={faCircleArrowRight}
                   aria-disabled={sliderNumber <= photos.length}
                   onClick={() => handleMove("incr")}
                 />
@@ -142,7 +136,7 @@ const Hotel = () => {
               </button>
               <h1 className="hotelTitle font-bold text-2xl">{data.name}</h1>
               <div className="hotelAddress text-sm flex items-center gap-2">
-                <FontAwesomeIcon icon={faLocationDot} />
+                <LocationOnIcon />
                 <span>{data.address}</span>
               </div>
               <span className="hotelDistance text-[#0071c2] font-semibold">

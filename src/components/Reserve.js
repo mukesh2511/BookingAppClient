@@ -1,5 +1,4 @@
-import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CloseIcon from "@mui/icons-material/Close";
 import useFetch from "../hooks/useFetch.js";
 import React, { useContext, useState } from "react";
 import { SearchContext } from "../context/SearchContext.js";
@@ -66,8 +65,7 @@ const Reserve = ({ setModel, hotelId }) => {
     <>
       <div className="reserve w-screen h-screen bg-[0,0,0.5] fixed top-0 left-40  sm:left-0 flex justify-center items-center ">
         <div className="rcontainer bg-white relative p-5 ">
-          <FontAwesomeIcon
-            icon={faCircleXmark}
+          <CloseIcon
             className="rClose absolute right-0 top-0 text-2xl text-slate-600 cursor-pointer"
             onClick={() => setModel(false)}
           />

@@ -1,15 +1,12 @@
 import React, { useContext, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBed,
-  faCalendarDays,
-  faCar,
-  faCartFlatbedSuitcase,
-  faPerson,
-  faPlane,
-  faTaxi,
-  faTowerCell,
-} from "@fortawesome/free-solid-svg-icons";
+import HotelIcon from "@mui/icons-material/Hotel";
+import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import FlightIcon from "@mui/icons-material/Flight";
+import StorefrontIcon from "@mui/icons-material/Storefront";
+import CellTowerIcon from "@mui/icons-material/CellTower";
+import LocalTaxiIcon from "@mui/icons-material/LocalTaxi";
+import EditCalendarIcon from "@mui/icons-material/EditCalendar";
+import PersonIcon from "@mui/icons-material/Person";
 import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
@@ -69,30 +66,30 @@ const Header = ({ type }) => {
         >
           <div className="headerList flex gap-10 mb-12 px-4 lg:px-0 ">
             <div className="headerItem flex gap-2 items-center active border border-white px-[14px] py-[8px] rounded-3xl cursor-pointer">
-              <FontAwesomeIcon icon={faBed} />
+              <HotelIcon />
               <span>Stays</span>
             </div>
             <div className="headerItem flex gap-2 items-center">
-              <FontAwesomeIcon icon={faPlane} />
+              <FlightIcon />
               <span>Flights</span>
             </div>
             <div className="headerItem flex gap-2 items-center">
-              <FontAwesomeIcon icon={faCartFlatbedSuitcase} />
+              <StorefrontIcon />
 
               <span>Flight + Hotel</span>
             </div>
             <div className="headerItem flex gap-2 items-center">
-              <FontAwesomeIcon icon={faCar} />
+              <DirectionsCarIcon />
 
               <span>Car rentals</span>
             </div>
             <div className="headerItem flex gap-2 items-center">
-              <FontAwesomeIcon icon={faTowerCell} />
+              <CellTowerIcon />
 
               <span>Attraction</span>
             </div>
             <div className="headerItem flex gap-2 items-center">
-              <FontAwesomeIcon icon={faTaxi} />
+              <LocalTaxiIcon />
 
               <span>Airpot taxis</span>
             </div>
@@ -113,7 +110,7 @@ const Header = ({ type }) => {
               )}
               <div className="headerSearch flex absolute bottom-[-25px] w-full max-w-5xl bg-white text-black border-solid border-4 border-[#febb02] justify-around items-center h-12 py-4">
                 <div className="headerSearchItem  px-4 py-1 rounded-sm flex gap-2 items-center ">
-                  <FontAwesomeIcon className="text-gray-400" icon={faBed} />
+                  <HotelIcon className="text-gray-400" />
                   <input
                     type="text"
                     placeholder="Where are you going?"
@@ -127,10 +124,7 @@ const Header = ({ type }) => {
                   className="headerSearchItem flex gap-2 items-center"
                   onClick={() => setOpenDate(!openDate)}
                 >
-                  <FontAwesomeIcon
-                    className="text-gray-400"
-                    icon={faCalendarDays}
-                  />
+                  <EditCalendarIcon className="text-gray-400" />
                   <span className="headerSearchText text-gray-400 cursor-pointer">
                     {`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
                       date[0].endDate,
@@ -149,7 +143,7 @@ const Header = ({ type }) => {
                   )}
                 </div>
                 <div className="headerSearchItem flex gap-2 items-center cursor-pointer ">
-                  <FontAwesomeIcon className="text-gray-400" icon={faPerson} />
+                  <PersonIcon className="text-gray-400" />
                   <span
                     className="headerSearchText text-gray-400"
                     onClick={() => setOpenOptions(!openOptions)}
